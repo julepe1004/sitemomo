@@ -68,7 +68,7 @@ body {
   top: 0; 
   width: 50px; 
   height: 80px; 
-  background: #e9a9ae; 
+  background: #ffffff; 
   border-radius: 50px 50px 0 0; 
   transform: rotate(-45deg);  
   transform-origin: 0 100%;
@@ -87,5 +87,5 @@ body {
 }
 
 @keyframes pulsecolor {
-  10% {background: #f85353}
+  10% {background: #ff0000}
 }
