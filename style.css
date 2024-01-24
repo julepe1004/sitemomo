@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(36,0,29);
+  background: linear-gradient(90deg, rgba(36,0,29,1) 0%, rgba(121,9,40,1) 49%, rgba(255,0,179,1) 100%);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: rgb(255, 255, 255);
+  gap: 32px;
+}
+
+.title {
+  font-style: bold;
+  grid-column: 4 span;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.value {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 16px;
+}
+
+#wrapper {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    
+	animation:pulse 1s infinite;
+}
+
+
+#pulsingheart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px;
+  
+} 
+
+#pulsingheart:before, #pulsingheart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #e9a9ae; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;
+  animation:pulsecolor 1s infinite;
+} 
+
+#pulsingheart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation:pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #f85353}
+}
