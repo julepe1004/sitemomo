@@ -5,14 +5,14 @@ const secondsElement = document.querySelector("[data-seconds]");
 
 const render = (days, hours, minutes, seconds) => {
   daysElement.innerHTML = String(days).padStart(2, "0");
-  hoursElement.innerHTML = String(hours).padStart(2, "9");
+  hoursElement.innerHTML = String(hours).padStart(2, "00");
   minutesElement.innerHTML = String(minutes).padStart(2, "0");
   secondsElement.innerHTML = String(seconds).padStart(2, "0");
 };
 
 const countdown = () => {
   const now = new Date();
-  const targetDate = new Date(2024, 6, 22);
+  const targetDate = new Date(2024, 6, 22, 9);
 
   const timeLeft = targetDate - now;
 
