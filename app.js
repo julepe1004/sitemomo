@@ -5,7 +5,7 @@ const secondsElement = document.querySelector("[data-seconds]");
 
 const render = (days, hours, minutes, seconds) => {
   daysElement.innerHTML = String(days).padStart(2, "0");
-  hoursElement.innerHTML = String(hours).padStart(2, "00");
+  hoursElement.innerHTML = String(hours).padStart(2, "0");
   minutesElement.innerHTML = String(minutes).padStart(2, "0");
   secondsElement.innerHTML = String(seconds).padStart(2, "0");
 };
