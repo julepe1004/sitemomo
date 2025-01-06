@@ -12,7 +12,7 @@ const render = (days, hours, minutes, seconds) => {
 
 const countdown = () => {
   const now = new Date();
-  const targetDate = new Date(2024, 11, 28, 17);
+  const targetDate = new Date(2025, 02, 01, 19);
 
   const timeLeft = targetDate - now;
 
